@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
 import RedirectButton from './RedirectButton';
-import esportsearningsmap from '../public/EsportsEarnings.jpg'
 
 const NoteableProjects = () => {
     const urls = [
@@ -13,7 +12,7 @@ const NoteableProjects = () => {
     ];
     return (
         <div>
-            <div className="collapse bg-accent">
+            <div className="collapse bg-primary">
                 <input type="checkbox" />
                 <div className="collapse-title text-xl font-medium bg-primary">EsportsEarnings</div>
                 <div className="collapse-content bg-primary">
@@ -26,14 +25,17 @@ const NoteableProjects = () => {
                     <RedirectButton url={urls[1]}>
                         Code
                     </RedirectButton>
-
                     <Image
-                        src={esportsearningsmap}
+                        src='/EsportsEarnings.webp'
                         alt="webmap"
+                        quality={100}
+                        sizes="100vw"
+                        width={1920}
+                        height={1080}
                     />
                 </div>
             </div>
-            <div className="collapse bg-accent my-10">
+            <div className="collapse bg-primary my-10">
                 <input type="checkbox" />
                 <div className="collapse-title text-xl font-medium bg-primary">UNIQUE GRAPHICS</div>
                 <div className="collapse-content bg-primary">
@@ -45,7 +47,7 @@ const NoteableProjects = () => {
                     </RedirectButton>
                 </div>
             </div>
-            <div className="collapse bg-accent my-10">
+            <div className="collapse bg-primary my-10">
                 <input type="checkbox" />
                 <div className="collapse-title text-xl font-medium bg-primary">Python rouge-like game</div>
                 <div className="collapse-content bg-primary">
@@ -56,7 +58,7 @@ const NoteableProjects = () => {
                     </RedirectButton>
                 </div>
             </div>
-            <div className="collapse bg-accent my-10">
+            <div className="collapse bg-primary my-10">
                 <input type="checkbox" />
                 <div className="collapse-title text-xl font-medium bg-primary">This website XD</div>
                 <div className="collapse-content bg-primary">
