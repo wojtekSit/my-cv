@@ -1,5 +1,7 @@
 import React from 'react';
+import Image from 'next/image'
 import RedirectButton from './RedirectButton';
+import esportsearningsmap from '../public/EsportsEarnings.jpg'
 
 const NoteableProjects = () => {
     const urls = [
@@ -24,7 +26,11 @@ const NoteableProjects = () => {
                     <RedirectButton url={urls[1]}>
                         Code
                     </RedirectButton>
-                    <img src="/EsportsEarnings.jpg" className='p-10' />
+
+                    <Image
+                        src={esportsearningsmap}
+                        alt="webmap"
+                    />
                 </div>
             </div>
             <div className="collapse bg-accent my-10">

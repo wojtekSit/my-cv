@@ -1,5 +1,7 @@
 import React from 'react';
+import Image from 'next/image'
 import RedirectButton from './RedirectButton';
+import sfdimage from '../public/SFD.webp'
 
 const EducationCards = () => {
     const urls = [
@@ -20,9 +22,10 @@ const EducationCards = () => {
             </div>
             <div className="card bg-base-100 image-full w-96 shadow-xl">
                 <figure>
-                    <img
-                        src="https://sfdsa.pl/wp-content/uploads/2023/09/sfd-img-1024x766.jpg"
-                        alt="SFD" />
+                    <Image
+                        src={sfdimage}
+                        alt="sfdlogo"
+                    />
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title">SFD</h2>
