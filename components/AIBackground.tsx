@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function AIBackground() {
     return (
         <Image
-            src='/background.webp'
+            src='/Background.webp'
             alt="backgroundimg"
             quality={100}
             fill={true}
